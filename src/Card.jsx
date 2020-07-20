@@ -23,7 +23,9 @@ function Card(props) {
               <br>
               </br>
               </div>
+              
               </div>
+              
               </>
     );
   }
