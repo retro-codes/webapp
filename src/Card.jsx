@@ -19,6 +19,13 @@ function Card(props) {
               >
                 <button>Watch Now!</button>
               </a>
+              <a 
+                href={props.description}
+                target="_blank"
+                >
+                  <button>Description</button>
+                </a>
+
               </div>
               <br>
               </br>

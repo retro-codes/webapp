@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Card from './Card';
 import './index.css';
 import Sdata from "./Sdata";
+import Footer from "./Footer";
 
 function ncard(val) {
     return(
@@ -10,15 +11,21 @@ function ncard(val) {
         imgsrc={val.imgsrc} 
         title={val.title} 
         sname={val.sname} 
-        link={val.link}
+        link={val.links}
+        description={val.description}
         />
     );
 }
 
 ReactDOM.render(
 <>
-<h1 className="heading_style">List of top 3 Amazon Original Series</h1>
+<h1>Webseries to be Watched</h1>
 {Sdata.map(ncard)}
+<br>
+
+</br>
+<Footer />
+
 </>,
 document.getElementById('root')
 );
